@@ -1,8 +1,12 @@
 .header {
-  color: red;
+  color: brown;
   text-align: center;
 }
 
 .main {
+  text-align: center;
+}
+
+.infoForm {
   text-align: center;
 }
