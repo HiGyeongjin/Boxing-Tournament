@@ -10,3 +10,8 @@
 .infoForm {
   text-align: center;
 }
+
+.formInput {
+  width: 40px;
+  height: 30px;
+}

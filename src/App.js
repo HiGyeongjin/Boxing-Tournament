@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import UserLogin from "./UserLogin/UserLogin";
 
 function App() {
   const [age, setAge] = useState("");
@@ -79,6 +80,7 @@ function App() {
     <div className="App">
       <h1 className="header">Boxing Tournament</h1>
       <hr />
+      <UserLogin />
       <h2 className="main">
         <span>Fighter 1 </span>
         <span>vs</span>
@@ -141,6 +143,7 @@ function App() {
           <span>cm</span>
           <LongerArm />
           <div>
+            <button type="submit">Let's see</button>
             <span>{winner}</span>
           </div>
           <hr />
