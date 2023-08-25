@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import LoginForm from "./LoginForm";
 
+const users = [];
+
 export default function UserLogin() {
   return (
     <BrowserRouter>
@@ -25,7 +27,7 @@ export default function UserLogin() {
 function HomePage() {
   return (
     <div>
-      <h2>Home Page</h2>
+      <h2>Welcome to my Home Page</h2>
       <div>
         <Link to="/login">Login</Link>
       </div>
