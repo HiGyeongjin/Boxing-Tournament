@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 
+const InputStatus = {
+  NORMAL: "normal",
+  ERROR: "error",
+  SUCCESS: "success",
+};
+
 export default function FighterName() {
-  const [name, setName] = useState();
-  const [gym, setGym] = useState();
+  const [name, setName] = useState("");
+  const [gym, setGym] = useState("");
+
+  const [nameInputStatus, setNameInputStatus] = useState(InputStatus.NORMAL);
+  const [gymInputStatus, setGymInputStatus] = useState(InputStatus.NORMAL);
 
   const handleChangeName = (e) => {
     setName(e.target.value);
@@ -25,6 +34,8 @@ export default function FighterName() {
           onChange={handleChangeName}
           value={name}
         />
+      </fieldset>
+      <fieldset>
         <label htmlFor="name">Gym name</label>
         <input
           name="name"
@@ -36,6 +47,10 @@ export default function FighterName() {
           value={gym}
         />
       </fieldset>
+      <div>
+        <button>Submit</button>
+        <button>Reset</button>
+      </div>
     </form>
   );
 }
