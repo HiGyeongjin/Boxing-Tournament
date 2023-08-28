@@ -1,0 +1,14 @@
+.input-valid {
+  border: 2px solid #51cf66;
+}
+
+.input-invalid {
+  border: 2px solid #ff6b6b;
+}
+
+.form-input {
+  display: block;
+  padding: 4px;
+  border: 2px solid #dee2e6;
+  border-radius: 3px;
+}
