@@ -63,6 +63,7 @@ export default function FighterName() {
       <fieldset>
         <label htmlFor="name">Boxer Name</label>
         <input
+          className="form-input"
           name="name"
           id="name"
           placeholder="Fill in Fighter's name"
