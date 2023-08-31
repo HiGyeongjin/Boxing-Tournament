@@ -1,3 +1,16 @@
+.form-label {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: gray;
+}
+
+.form-input {
+  display: block;
+  padding: 4px;
+  border: 2px solid #dee2e6;
+  border-radius: 3px;
+}
+
 .input-valid {
   border: 2px solid #51cf66;
 }
@@ -6,9 +19,12 @@
   border: 2px solid #ff6b6b;
 }
 
-.form-input {
-  display: block;
-  padding: 4px;
-  border: 2px solid #dee2e6;
-  border-radius: 3px;
+.text-error {
+  color: #ff6b6b;
+}
+
+.form-error {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #ff6b6b;
 }

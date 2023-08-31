@@ -23,7 +23,7 @@ export default function FighterName() {
   };
 
   const validateName = () => {
-    if (name.length < 1 || name.length > 30) {
+    if (name.length < 2 || name.length > 30) {
       setNameInputStatus(InputStatus.ERROR);
       return;
     }
@@ -58,12 +58,23 @@ export default function FighterName() {
     return "";
   };
 
+  const getInputStatusTextStyle = (status) => {
+    if (status === InputStatus.ERROR) {
+      return "text-error";
+    }
+    return "";
+  };
+
   return (
     <form>
       <fieldset>
-        <label htmlFor="name">Boxer Name</label>
+        <label
+          htmlFor="name"
+          className={"form-label " + getInputStatusTextStyle(nameInputStatus)}
+        >
+          Boxer Name
+        </label>
         <input
-          className="form-input"
           name="name"
           id="name"
           placeholder="Fill in Fighter's name"
@@ -72,7 +83,7 @@ export default function FighterName() {
           className={"form-input " + getInputStatusStyle(nameInputStatus)}
           value={name}
         />
-        <div>
+        <div className="form-error">
           {nameInputStatus === InputStatus.ERROR &&
             "Name has to be more than one character."}
         </div>
