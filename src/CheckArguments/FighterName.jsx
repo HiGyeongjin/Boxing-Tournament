@@ -66,8 +66,8 @@ export default function FighterName() {
   };
 
   return (
-    <form>
-      <fieldset>
+    <form className="form-container">
+      <fieldset className="form-fieldset">
         <label
           htmlFor="name"
           className={"form-label " + getInputStatusTextStyle(nameInputStatus)}
@@ -88,26 +88,39 @@ export default function FighterName() {
             "Name has to be more than one character."}
         </div>
       </fieldset>
-      <fieldset>
-        <label htmlFor="name">Gym name</label>
+      <fieldset className="form-fieldset">
+        <label
+          htmlFor="name"
+          className={"form-label " + getInputStatusTextStyle(gymInputStatus)}
+        >
+          Gym name
+        </label>
         <input
           name="name"
           id="name"
           placeholder="Fill in Fighter's Gym name"
           type="text"
           onChange={handleChangeGym}
-          className="form-input"
+          className={"form-input " + getInputStatusStyle(gymInputStatus)}
           value={gym}
         />
-        <div>
+        <div className="form-error">
           {gymInputStatus === InputStatus.ERROR && "Insert without space."}
         </div>
       </fieldset>
-      <div>
-        <button type="button" onClick={resetForm}>
+      <div className="button-container">
+        <button
+          type="button"
+          onClick={resetForm}
+          className="reset-button form-button"
+        >
           Reset
         </button>
-        <button type="button" onClick={submitForm}>
+        <button
+          type="button"
+          onClick={submitForm}
+          className="submit-button form-button"
+        >
           Submit
         </button>
       </div>

@@ -1,3 +1,15 @@
+.form-container {
+  min-width: 300px;
+}
+.form-fieldset {
+  text-align: center;
+  border: none;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-items: center;
+}
 .form-label {
   font-size: 15px;
   margin-bottom: 8px;
@@ -9,6 +21,7 @@
   padding: 4px;
   border: 2px solid #dee2e6;
   border-radius: 3px;
+  height: 20px;
 }
 
 .input-valid {
@@ -27,4 +40,24 @@
   font-size: 12px;
   margin-top: 4px;
   color: #ff6b6b;
+}
+.button-container {
+  display: flex;
+}
+.form-button {
+  flex: 1;
+  padding: 13px;
+  margin: 20px;
+  border-radius: 12px;
+  border: none;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.submit-button {
+  background-color: #37b24d;
+}
+.reset-button {
+  background-color: #adb5bd;
 }
