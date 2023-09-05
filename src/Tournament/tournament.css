@@ -1,0 +1,49 @@
+
+
+/* js.css below */
+/* html, body, .tournament
+  height: 100%
+  font-family: sans-serif
+  font-size: 10px
+  
+.hidden-bracket
+  display: none !important
+.bracket
+  position: relative
+  display: flex
+  height: 100%
+  padding-top: 38px
+  &:before
+    position: absolute
+    content: ""
+    width: 50%
+    height: 2px
+    top: 38px
+    left: 50%
+    transform: translateX(-50%)
+    background-color: black
+  li
+    position: relative
+    width: 50%
+    flex: 1
+    height: 100%
+    padding-top: 8px
+    /* border: 1px solid black */
+    text-align: center
+    &:before
+      position: absolute
+      content: ""
+      width: 2px
+      height: 9px
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+      background-color: black
+    &.winner
+      position: absolute
+      top: 0
+      left: -1px
+      height: 30px
+      width: 100%
+      &:before
+        top: 30px */
