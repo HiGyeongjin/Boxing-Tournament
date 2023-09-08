@@ -140,7 +140,9 @@ export default function Info() {
           <span>cm</span>
           <LongerArm />
           <div>
-            <button type="submit">Let's see</button>
+            <button type="submit" className="button-check">
+              Let's see
+            </button>
             <span>{winner}</span>
           </div>
           <hr />
