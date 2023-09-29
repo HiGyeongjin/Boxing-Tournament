@@ -9,8 +9,6 @@ import {
 } from "react-router-dom";
 import LoginForm from "./LoginForm";
 
-const users = [];
-
 export default function UserLogin() {
   return (
     <BrowserRouter>
