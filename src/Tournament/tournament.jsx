@@ -5,7 +5,7 @@ import {
   BracketGenerator,
 } from "react-tournament-bracket";
 
-export default function App() {
+export default function Tournament() {
   const game2 = {
     id: "2",
     name: "semi-finals",

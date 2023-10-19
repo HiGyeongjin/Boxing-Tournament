@@ -21,7 +21,6 @@ export default function LoginForm() {
       <form>
         <fieldset>
           <label htmlFor="email">Email</label>
-          <button>here!</button>
           <input
             placeholder="Enter email."
             required

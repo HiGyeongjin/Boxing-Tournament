@@ -1,23 +1,15 @@
 import React from "react";
-import {
-  Routes,
-  BrowserRouter,
-  Route,
-  Link,
-  useLocation,
-  Navigate,
-} from "react-router-dom";
+import { Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
 import LoginForm from "./LoginForm";
+// import Info from "./CheckArguments/Info";
 
 export default function UserLogin() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/detail" element={<UserDetailPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/detail" element={<UserDetailPage />} />
+    </Routes>
   );
 }
 
@@ -40,7 +32,7 @@ function LoginPage() {
       <h2>Login Page</h2>
       <LoginForm />
       <div>
-        <Link to="/">Back to Home</Link>
+        <Link to="/login">Back to Home</Link>
       </div>
     </div>
   );
@@ -69,7 +61,7 @@ function UserDetailPage() {
         <br />
         <strong>{password}</strong>
       </p>
-      <Link to="/login">Log out</Link>
+      <Link to="/detail">Log out</Link>
     </div>
   );
 }
