@@ -8,16 +8,10 @@ import Info from "./CheckArguments/Info";
 import FighterName from "./CheckArguments/FighterName";
 import { Link, Routes, Route } from "react-router-dom";
 
-//figure out how to make router inside of router.
-//i have router in UserLogin. and index.js has router too.
-
-//home page만들기 그래야 '/'루트 페이지를 생성하자 ->
 //UserLogin에서 route를 어떻게 손을 써야함.
-//여기 밑에 <Routes><Route path='/' element={<Home />} /> 이런식으로 넣기
 function App() {
   return (
     <div className="App">
-      {/* <UserLogin /> */}
       <nav>
         <ul>
           <li>
