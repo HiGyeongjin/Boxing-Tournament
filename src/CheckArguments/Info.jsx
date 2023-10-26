@@ -64,7 +64,7 @@ export default function Info() {
         {parseInt(data, 10) > parseInt(data1, 10) ? (
           <div>boxer1 arm is longer</div>
         ) : (
-          <div>boxer2 arm is longer</div>
+          <div>boxer2 arm is longer so.. who's going to win?</div>
         )}
       </div>
     );
