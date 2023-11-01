@@ -33,11 +33,11 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/user" element={<UserLogin />} />
+        <Route path="/login" element={<UserLogin />} />
         <Route path="/tournament" element={<Tournament />} />
         <Route path="/register-fighter" element={<FighterName />} />
         <Route path="/fighter-name" element={<Info />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/notfound" element={<NotFound />} />
       </Routes>
     </div>
   );

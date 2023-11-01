@@ -6,24 +6,24 @@ import LoginForm from "./LoginForm";
 export default function UserLogin() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/login" element={<LoginPage />} />
+      <Route path="/" element={<LoginPage />} />
+      {/* <Route path="/login" element={<LoginPage />} /> */}
       <Route path="/detail" element={<UserDetailPage />} />
     </Routes>
   );
 }
 
 // HomePage 페이지 컴포넌트를 구현하세요.
-function HomePage() {
-  return (
-    <div>
-      <h2>Welcome to my Home Page</h2>
-      <div>
-        <Link to="/login">Login</Link>
-      </div>
-    </div>
-  );
-}
+// function HomePage() {
+//   return (
+//     <div>
+//       <h2>Welcome to my Home Page</h2>
+//       <div>
+//         <Link to="/login">Login</Link>
+//       </div>
+//     </div>
+//   );
+// }
 
 // LoginPage 페이지 컴포넌트를 구현하세요.
 function LoginPage() {
@@ -32,7 +32,7 @@ function LoginPage() {
       <h2>Login Page</h2>
       <LoginForm />
       <div>
-        <Link to="/login">Back to Home</Link>
+        <Link to="/">Back to Home</Link>
       </div>
     </div>
   );
