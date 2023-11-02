@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Boxing-Tournament/static/css/main.53373987.css",
+    "main.js": "/Boxing-Tournament/static/js/main.53c54746.js",
+    "static/js/787.23f612ee.chunk.js": "/Boxing-Tournament/static/js/787.23f612ee.chunk.js",
+    "index.html": "/Boxing-Tournament/index.html",
+    "main.53373987.css.map": "/Boxing-Tournament/static/css/main.53373987.css.map",
+    "main.53c54746.js.map": "/Boxing-Tournament/static/js/main.53c54746.js.map",
+    "787.23f612ee.chunk.js.map": "/Boxing-Tournament/static/js/787.23f612ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53373987.css",
+    "static/js/main.53c54746.js"
+  ]
+}
