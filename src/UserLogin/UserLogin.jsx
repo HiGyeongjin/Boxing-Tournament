@@ -32,6 +32,9 @@ function LoginPage() {
       <h2>Login Page</h2>
       <LoginForm />
       <div>
+        <Link to="/register">Register</Link>
+      </div>
+      <div>
         <Link to="/">Back to Home</Link>
       </div>
     </div>

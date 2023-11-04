@@ -6,18 +6,12 @@ import NotFound from "./utils/NotFound";
 import Tournament from "./Tournament/tournament";
 import Info from "./CheckArguments/Info";
 import FighterName from "./CheckArguments/FighterName";
+import EmailRegister from "./UserLogin/email-register";
 import { Link, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <img
-          src="/boxing-gloves.png"
-          alt="boxing-gloves"
-          style={{ width: 30 }}
-        />
-      </div>
       <nav>
         <ul>
           <li>
@@ -25,6 +19,8 @@ function App() {
           </li>
           <li>
             <Link to="/login">login</Link>
+            <div>&nbsp;/</div>
+            <Link to="/register">register</Link>
           </li>
           <li>
             <Link to="/tournament">tournament</Link>
@@ -44,6 +40,7 @@ function App() {
         <Route path="/register-fighter" element={<FighterName />} />
         <Route path="/fighter-name" element={<Info />} />
         <Route path="/notfound" element={<NotFound />} />
+        <Route path="/register" element={<EmailRegister />} />
       </Routes>
     </div>
   );

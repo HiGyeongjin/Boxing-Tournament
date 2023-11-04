@@ -43,7 +43,7 @@ export default function RegisterForm() {
             name="password"
           />
         </fieldset>
-        <button onClick={submitForm}>Register</button>
+        <button onSubmit={submitForm}>Register</button>
       </form>
     </div>
   );
