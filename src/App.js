@@ -8,10 +8,16 @@ import Info from "./CheckArguments/Info";
 import FighterName from "./CheckArguments/FighterName";
 import { Link, Routes, Route } from "react-router-dom";
 
-//UserLogin에서 route를 어떻게 손을 써야함.
 function App() {
   return (
     <div className="App">
+      <div>
+        <img
+          src="/boxing-gloves.png"
+          alt="boxing-gloves"
+          style={{ width: 30 }}
+        />
+      </div>
       <nav>
         <ul>
           <li>
