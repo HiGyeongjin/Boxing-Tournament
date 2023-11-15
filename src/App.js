@@ -7,7 +7,7 @@ import Tournament from "./Tournament/tournament";
 import Info from "./CheckArguments/Info";
 import FighterName from "./CheckArguments/FighterName";
 import EmailRegister from "./UserLogin/email-register";
-import { Link, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./common/Header";
 
 function App() {
