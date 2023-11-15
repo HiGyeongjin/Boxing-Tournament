@@ -13,19 +13,6 @@ export default function UserLogin() {
   );
 }
 
-// HomePage 페이지 컴포넌트를 구현하세요.
-// function HomePage() {
-//   return (
-//     <div>
-//       <h2>Welcome to my Home Page</h2>
-//       <div>
-//         <Link to="/login">Login</Link>
-//       </div>
-//     </div>
-//   );
-// }
-
-// LoginPage 페이지 컴포넌트를 구현하세요.
 function LoginPage() {
   return (
     <div>

@@ -8,31 +8,12 @@ import Info from "./CheckArguments/Info";
 import FighterName from "./CheckArguments/FighterName";
 import EmailRegister from "./UserLogin/email-register";
 import { Link, Routes, Route } from "react-router-dom";
+import Header from "./common/Header";
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/login">login</Link>
-            <div>&nbsp;/</div>
-            <Link to="/register">register</Link>
-          </li>
-          <li>
-            <Link to="/tournament">tournament</Link>
-          </li>
-          <li>
-            <Link to="/register-fighter">Register fighter's name</Link>
-          </li>
-          <li>
-            <Link to="/fighter-name">fighter name</Link>
-          </li>
-        </ul>
-      </nav>
+      <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/login" element={<UserLogin />} />
