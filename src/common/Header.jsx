@@ -6,10 +6,7 @@ export default function Header() {
     <div>
       <NavStyle>
         <H1Style>
-          <img
-            src="https://boxingbc.ca/wp-content/uploads/2022/08/boxing-british-columbia-logo-black.png"
-            style={{ width: "300px" }}
-          />
+          <ImageStyle src="https://boxingbc.ca/wp-content/uploads/2022/08/boxing-british-columbia-logo-black.png" />
         </H1Style>
         <Ulstyled>
           <Listyled>
@@ -45,6 +42,9 @@ const H1Style = styled.h1`
   flex: 1;
 `;
 
+const ImageStyle = styled.img`
+  width: 300px;
+`;
 const Ulstyled = styled.ul`
   list-style-type: none;
   display: flex;
