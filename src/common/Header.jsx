@@ -27,13 +27,13 @@ export default function Header() {
                 <DropdownStyle to="/login">Login</DropdownStyle>
               </ListStyle>
               <ListStyle>
-                <DropdownStyle to="/">Drop menu 2</DropdownStyle>
+                <DropdownStyle to="/">log out</DropdownStyle>
               </ListStyle>
               <ListStyle>
-                <DropdownStyle to="/">Drop menu 3</DropdownStyle>
+                <DropdownStyle to="/">My page</DropdownStyle>
               </ListStyle>
               <ListStyle>
-                <DropdownStyle to="/">Drop menu 4</DropdownStyle>
+                <DropdownStyle to="/">My account</DropdownStyle>
               </ListStyle>
             </DropMenuStyle>
           </ListStyle>
