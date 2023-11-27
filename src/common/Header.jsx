@@ -17,7 +17,7 @@ export default function Header() {
             <LinkStyle to="/">Home</LinkStyle>
           </ListStyle>
           <ListStyle>
-            <LinkStyle href="#">Tournament</LinkStyle>
+            <LinkStyle to="/tournament">Tournament</LinkStyle>
           </ListStyle>
           <ListStyle>
             <LinkStyle href="#">Account</LinkStyle>
@@ -44,29 +44,6 @@ export default function Header() {
             <LinkStyle to="/login">Login</LinkStyle>
           </ListStyle>
         </NavLinks>
-        {/* 
-        <Ulstyled>
-          <Listyled>
-            <LinkStyle to="/">Home</LinkStyle>
-          </Listyled>
-          <Listyled>
-            <LinkStyle to="/tournament">Tournament</LinkStyle>
-          </Listyled>
-          <Listyled>
-            <LinkStyle to="/login">Login</LinkStyle>
-          </Listyled>
-          <Listyled>
-            <LinkStyle to="/register">Register</LinkStyle>
-          </Listyled>
-          <Listyled>
-            <LinkStyle to="/register-fighter">
-              Register fighter's name
-            </LinkStyle>
-          </Listyled>
-          <Listyled>
-            <LinkStyle to="/fighter-name">Fighter name</LinkStyle>
-          </Listyled>
-        </Ulstyled> */}
       </Wrapper>
     </NavStyle>
   );
@@ -74,16 +51,16 @@ export default function Header() {
 
 const NavStyle = styled.nav`
   background-color: pink;
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 999;
-  height: 80px;
+  height: 6rem;
 `;
 
 const Wrapper = styled.nav`
-  max-width: 1250px;
+  width: 100%;
   padding: 0 30px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,13 +68,19 @@ const Wrapper = styled.nav`
 const H1Style = styled.h1``;
 
 const ImageStyle = styled.img`
+  display: flex;
+  align-itmes: center;
   width: 300px;
+  margin: 0.8rem;
 `;
 
 const NavLinks = styled.ul`
   display: inline-flex;
 `;
+
+// 나중에 displya:none부분 바꾸기! hover 하거나 클릭하면 보여질수있게
 const DropMenuStyle = styled.ul`
+  display: none;
   background-color: #242526;
   width: 150px;
   top: 65px;
@@ -135,19 +118,3 @@ const DropdownStyle = styled(Link)`
 const ListStyle = styled.li`
   list-style: none;
 `;
-
-//내가 만든거
-// const Ulstyled = styled.ul`
-//   list-style-type: none;
-//   display: flex;
-//   justify-content: space-around;
-//   flex: 2;
-// `;
-
-// const Listyled = styled.li`
-//   border: 1px solid red;
-//   margin: 50px 10px;
-//   border-radius: 15px;
-//   flex: 1;
-//   text-align: center;
-// `;

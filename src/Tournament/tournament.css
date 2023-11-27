@@ -1,49 +1,56 @@
+/* styles.css */
 
+/* ... existing styles ... */
 
-/* js.css below */
-/* html, body, .tournament
-  height: 100%
-  font-family: sans-serif
-  font-size: 10px
-  
-.hidden-bracket
-  display: none !important
-.bracket
-  position: relative
-  display: flex
-  height: 100%
-  padding-top: 38px
-  &:before
-    position: absolute
-    content: ""
-    width: 50%
-    height: 2px
-    top: 38px
-    left: 50%
-    transform: translateX(-50%)
-    background-color: black
-  li
-    position: relative
-    width: 50%
-    flex: 1
-    height: 100%
-    padding-top: 8px
-    /* border: 1px solid black */
-    text-align: center
-    &:before
-      position: absolute
-      content: ""
-      width: 2px
-      height: 9px
-      top: 0
-      left: 50%
-      transform: translateX(-50%)
-      background-color: black
-    &.winner
-      position: absolute
-      top: 0
-      left: -1px
-      height: 30px
-      width: 100%
-      &:before
-        top: 30px */
+.boxer-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxer-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.boxer-record {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.result-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.win-btn,
+.loss-btn {
+  padding: 8px 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.win-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.win-btn:hover {
+  background-color: #45a049;
+}
+
+.loss-btn {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.loss-btn:hover {
+  background-color: #c9302c;
+}
