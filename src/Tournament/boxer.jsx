@@ -3,8 +3,8 @@ import "./tournament.css";
 
 const Boxer = ({ name, wins, losses, onResultUpdate }) => {
   return (
-    <div className="boxer-container">
-      <div>
+    <div>
+      <div className="boxer-container">
         <h3 className="boxer-name">{name}</h3>
         <p className="boxer-record">
           Record: {wins} Wins - {losses} Losses
@@ -17,6 +17,16 @@ const Boxer = ({ name, wins, losses, onResultUpdate }) => {
             Lose
           </button>
         </div>
+      </div>
+
+      <div>
+        <div>Winner</div>
+      </div>
+      <div>
+        <div>Winner</div>
+      </div>
+      <div>
+        <div>Winner</div>
       </div>
     </div>
   );

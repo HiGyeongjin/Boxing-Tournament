@@ -21,7 +21,7 @@ const Tournament = () => {
 
   return (
     <div className="tournament-container">
-      <h1>Boxing Tournament</h1>
+      <h1 className="h1-style">Boxing Tournament</h1>
       {boxers.map((boxer, index) => (
         <Boxer
           key={index}
