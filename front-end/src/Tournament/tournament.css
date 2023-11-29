@@ -1,10 +1,10 @@
 .tournament-container {
   background-color: beige;
-  /* display: flex; */
 }
 
 .h1-style {
   text-align: center;
+  margin: 1rem;
 }
 
 .boxer-container {
@@ -14,7 +14,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }

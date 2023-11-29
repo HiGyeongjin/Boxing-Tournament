@@ -1,0 +1,21 @@
+/* styles.css */
+
+/* ... existing styles ... */
+
+.bracket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.match {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.match span {
+  margin: 0 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}

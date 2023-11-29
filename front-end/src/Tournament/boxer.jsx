@@ -18,16 +18,6 @@ const Boxer = ({ name, wins, losses, onResultUpdate }) => {
           </button>
         </div>
       </div>
-
-      <div>
-        <div>Winner</div>
-      </div>
-      <div>
-        <div>Winner</div>
-      </div>
-      <div>
-        <div>Winner</div>
-      </div>
     </div>
   );
 };
