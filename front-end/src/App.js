@@ -8,6 +8,7 @@ import Info from "./CheckArguments/Info";
 import BoxingBracket from "./Bracket/boxing-bracket";
 import FighterName from "./CheckArguments/FighterName";
 import EmailRegister from "./UserLogin/email-register";
+import Palette from "./color/palette";
 import { Routes, Route } from "react-router-dom";
 import Header from "./common/Header";
 
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/color" element={<Palette />} />
         <Route path="/login" element={<UserLogin />} />
         <Route path="/tournament" element={<Tournament />} />
         <Route path="/bracket" element={<BoxingBracket />} />

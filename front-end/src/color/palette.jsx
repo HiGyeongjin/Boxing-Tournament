@@ -97,7 +97,7 @@ const currentTimeSelector = (state) => state.currentTime;
 const isRunningSelector = (state) => state.isRunning;
 const startTimeSelector = (state) => state.startTime;
 
-export default function App() {
+export default function Palette() {
   return (
     <Provider store={store}>
       <Counter />
