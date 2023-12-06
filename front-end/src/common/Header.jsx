@@ -6,10 +6,12 @@ export default function Header() {
     <NavStyle>
       <Wrapper>
         <H1Style>
-          <ImageStyle
-            src="https://boxingbc.ca/wp-content/uploads/2022/08/boxing-british-columbia-logo-black.png"
-            alt="main-logo"
-          />
+          <a href="/">
+            <ImageStyle
+              src="https://boxingbc.ca/wp-content/uploads/2022/08/boxing-british-columbia-logo-black.png"
+              alt="main-logo"
+            />
+          </a>
         </H1Style>
 
         <NavLinks>

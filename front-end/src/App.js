@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import UserLogin from "./UserLogin/UserLogin";
-import MainPage from "./UserLogin/main-page";
+import MainPage from "./common/main-page";
 import NotFound from "./utils/NotFound";
 import Tournament from "./Tournament/tournament";
 import Info from "./CheckArguments/Info";
@@ -11,11 +11,13 @@ import EmailRegister from "./UserLogin/email-register";
 import Palette from "./color/palette";
 import { Routes, Route } from "react-router-dom";
 import Header from "./common/Header";
+import Nav from "./common/nav";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Nav />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/color" element={<Palette />} />

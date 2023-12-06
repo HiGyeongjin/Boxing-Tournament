@@ -11,6 +11,7 @@ export default function Nav() {
           <LinkStyle to="/bracket">Bracket</LinkStyle>
           <LinkStyle to="/login">Login</LinkStyle>
           <LinkStyle to="/register">Register</LinkStyle>
+          <LinkStyle to="/color">Color Palette</LinkStyle>
         </LinkContainer>
         <DivStyle>
           this part is going to contain a content. And I'm testing overflowing.
