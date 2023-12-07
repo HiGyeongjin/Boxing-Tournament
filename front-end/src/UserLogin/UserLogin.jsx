@@ -7,7 +7,6 @@ export default function UserLogin() {
   return (
     <Routes>
       <Route path="/" element={<LoginPage />} />
-      {/* <Route path="/login" element={<LoginPage />} /> */}
       <Route path="/detail" element={<UserDetailPage />} />
     </Routes>
   );

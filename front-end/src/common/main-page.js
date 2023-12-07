@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-import Nav from "./nav";
 
 export default function MainPage() {
   return (
