@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
 import LoginForm from "./LoginForm";
-// import Info from "./CheckArguments/Info";
+import "./styles.css";
 
 export default function UserLogin() {
   return (
@@ -14,8 +14,8 @@ export default function UserLogin() {
 
 function LoginPage() {
   return (
-    <div>
-      <h2>Login Page</h2>
+    <div className="loginPage-container">
+      <h2 className="h2-style">Login Page</h2>
       <LoginForm />
       <div>
         <Link to="/register">Register</Link>

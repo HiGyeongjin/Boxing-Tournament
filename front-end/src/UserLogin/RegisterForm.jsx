@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import "./styles.css";
 
 export default function RegisterForm() {
   const emailRef = useRef();
@@ -18,7 +19,7 @@ export default function RegisterForm() {
     onSubmit(formData);
   };
   return (
-    <div>
+    <container>
       <form>
         <fieldset>
           <label htmlFor="email">Email</label>
@@ -45,6 +46,6 @@ export default function RegisterForm() {
         </fieldset>
         <button onSubmit={submitForm}>Register</button>
       </form>
-    </div>
+    </container>
   );
 }

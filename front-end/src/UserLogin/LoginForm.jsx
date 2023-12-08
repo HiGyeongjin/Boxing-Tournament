@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import "./styles.css";
 
 export default function LoginForm() {
   const navigate = useNavigate();
@@ -14,12 +15,12 @@ export default function LoginForm() {
 
     // DetailPage로 이동하는 코드를 작성하세요.
     // navigate(`/detail?email=${email}&password=${password}`);
-    
+
     navigate(`/detail?email=${email}&password=${password}`);
   };
 
   return (
-    <div>
+    <container>
       <form>
         <fieldset>
           <label htmlFor="email">Email</label>
@@ -48,6 +49,6 @@ export default function LoginForm() {
           Login
         </button>
       </form>
-    </div>
+    </container>
   );
 }
