@@ -1,5 +1,5 @@
 .h2-style {
-  color: red;
+  margin: 1vh;
 }
 
 .loginPage-container {
@@ -8,4 +8,13 @@
   align-items: center;
   justify-content: center;
   background-color: antiquewhite;
+}
+
+.email-container {
+  margin: 1vh;
+  padding: 1vh;
+}
+
+.form-container {
+  margin: 1vh;
 }

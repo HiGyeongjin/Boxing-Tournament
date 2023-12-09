@@ -20,8 +20,8 @@ export default function LoginForm() {
   };
 
   return (
-    <container>
-      <form>
+    <container className="email-container">
+      <form className="form-container">
         <fieldset>
           <label htmlFor="email">Email</label>
           <input
