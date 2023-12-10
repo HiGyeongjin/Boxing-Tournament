@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1= post ? "글 수정하기": "새 글 등록하기"
+  form(action=post ? "/posts/"+post.shortId : "/posts", method="post")
+    div
+      label 제목
+      input(type="text" name="title" value=post&&post.title)
+    div
+      label 내용
+      textarea(name="content")= post&&post.content
+    div: input(type="submit" value=post ? "수정":"등록")

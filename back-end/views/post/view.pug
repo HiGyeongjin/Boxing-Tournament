@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+  h1= post.title
+  table
+    tbody
+      tr
+        th= post.author
+        th(colspan="2")= formatDate(post.createdAt)
+      tr
+        td(colspan="3")
+          pre= post.content
+      tr
+        td: a(href="/posts"): button 목록으로
+        td: a(href="?edit=true"): button 수정
+        td: button.delete(onclick='deletePost()') 삭제
+  script(type="text/javascript").
+    function deletePost() {
+      fetch('/posts/#{post.shortId}', { method: 'delete' })
+        .then((res) => {
+          if (res.ok) {
+            alert('삭제되었습니다.');
+            window.location.href = '/posts';
+          } else {
+            alert('오류가 발생했습니다.');
+          }
+        })
+        .catch((err) => {
+          alert('오류가 발생했습니다.');
+        });
+    }
