@@ -25,6 +25,9 @@ export default function Header() {
             <LinkStyle to="/bracket">Bracket</LinkStyle>
           </ListStyle>
           <ListStyle>
+            <LinkStyle to="/todo">Todo</LinkStyle>
+          </ListStyle>
+          <ListStyle>
             <LinkStyle href="#">Account</LinkStyle>
             {/* onMouseEnter={} 이거 바로 위에 useState넣어서 만들어보기*/}
             <DropMenuStyle>

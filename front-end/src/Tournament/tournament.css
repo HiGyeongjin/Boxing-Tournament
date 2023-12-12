@@ -1,5 +1,7 @@
 .tournament-container {
   background-color: beige;
+  display: flex;
+  flex-direction: column;
 }
 
 .h1-style {

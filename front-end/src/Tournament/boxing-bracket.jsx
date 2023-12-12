@@ -1,6 +1,6 @@
 // BoxingTournament.js
 import React, { useState } from "react";
-import Boxer from "../Tournament/boxer";
+import Boxer from "./boxer";
 import "./style.css";
 
 const BoxingTournament = () => {
