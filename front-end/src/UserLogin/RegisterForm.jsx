@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import "./styles.css";
+import { useNavigate } from "react-router-dom";
 
-export default function RegisterForm() {
+export default function RegisterForm({ onSubmit }) {
+  const navigate = useNavigate;
   const emailRef = useRef();
   const passwordRef = useRef();
 
@@ -15,6 +17,11 @@ export default function RegisterForm() {
       email,
       password,
     };
+
+    navigate.push({
+      pathname: "/details",
+      search: `?email=${email}&password=${password}`,
+    });
 
     onSubmit(formData);
   };

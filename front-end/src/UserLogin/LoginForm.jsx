@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, redirect } from "react-router-dom";
 import "./styles.css";
 
 export default function LoginForm() {
@@ -13,10 +13,18 @@ export default function LoginForm() {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
-    // DetailPage로 이동하는 코드를 작성하세요.
-    // navigate(`/detail?email=${email}&password=${password}`);
+    if (!email || !password) {
+      return redirect("/login");
+    }
+    //email 혹은 password가 없다면 login페이지로 리다이렉트 해줌.
 
-    navigate(`/detail?email=${email}&password=${password}`);
+    navigate(`/details?email=${email}&password=${password}`);
+
+    //아래처럼 쓸 수도 있음.
+    // history.push({
+    //     pathname: '/details',
+    //     search: `?email=${email}&password=${password}`
+    // })
   };
 
   return (
