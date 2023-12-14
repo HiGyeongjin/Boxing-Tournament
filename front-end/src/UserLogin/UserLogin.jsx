@@ -86,8 +86,9 @@ function RegisterPage() {
 
     users.push(formData);
     //그때 user 데이터를 formData에 추가함.
-    history.push("/login");
-    //user를 못찾았으면 login으로 돌아감.
+
+    history("/login");
+    //user를 못찾았으면 login페이지로 돌아감.
   };
 
   return (
