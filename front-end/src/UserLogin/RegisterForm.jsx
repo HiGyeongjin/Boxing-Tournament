@@ -18,12 +18,12 @@ export default function RegisterForm({ onSubmit }) {
       password,
     };
 
-    navigate.push({
-      pathname: "/details",
-      search: `?email=${email}&password=${password}`,
-    });
-
     onSubmit(formData);
+
+    // navigate.push({
+    //   pathname: "/details",
+    //   search: `?email=${email}&password=${password}`,
+    // });
   };
   return (
     <container>

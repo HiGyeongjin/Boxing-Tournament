@@ -19,15 +19,14 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
+      <UserLogin />
       <Routes>
         <Route path="/color" element={<Palette />} />
-        <Route path="/login" element={<UserLogin />} />
         <Route path="/tournament" element={<Tournament />} />
         <Route path="/details" element={<UserDetailPage />} />
         <Route path="/bracket" element={<BoxingBracket />} />
         <Route path="/register-fighter" element={<FighterName />} />
         <Route path="/fighter-name" element={<Info />} />
-        <Route path="/register" element={<RegisterForm />} />
         <Route path="/todo" element={<TodoApp />} />
         <Route path="/" element={<MainPage />} />
       </Routes>
