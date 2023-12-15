@@ -7,12 +7,12 @@ import Tournament from "./Tournament/tournament";
 import Info from "./CheckArguments/Info";
 import BoxingBracket from "./Tournament/boxing-bracket";
 import FighterName from "./CheckArguments/FighterName";
-import RegisterForm from "./UserLogin/RegisterForm";
 import Palette from "./color/palette";
 import { Routes, Route } from "react-router-dom";
 import Header from "./common/Header";
 import Nav from "./common/nav";
 import TodoApp from "./TodoApp/App";
+import UserTable from "./UserTableApp/UserTable";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <Header />
       <Nav />
       <UserLogin />
+      {/* <UserTable /> */}
       <Routes>
         <Route path="/color" element={<Palette />} />
         <Route path="/tournament" element={<Tournament />} />

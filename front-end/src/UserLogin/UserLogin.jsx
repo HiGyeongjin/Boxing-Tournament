@@ -23,11 +23,31 @@ export default function UserLogin() {
   );
 }
 
+// users 리스트에 등록된 회원인 경우에만 회원의 상세한 정보를 띄우는 코드를 작성하세요.
 function LoginPage() {
+  const history = useHistory();
+  //여기 history 어케 뭘로 바꾸냐~~~~
+  const handleSubmit = (formData) => {
+    const { email, password } = formData;
+    const foundUser = users.find(
+      (user) => user.email === email && user.password === password
+    );
+    //유저의 이메일과 비밀번호를 확인함.
+
+    //밑에처럼 foundUser를 통해서 확인가능하지만 depth를 줄이기 위해
+    if (!foundUser) return;
+    //이메일을 못찾으면 다시 돌아가기
+    history.push(`/detail?email=${email}&password=${password}`);
+    //하고 적어도 가능.
+    //   if (foundUser) {
+    //       history.push(`/detail?email${email}&password=${password}`)
+    //   }
+  };
+
   return (
     <div className="loginPage-container">
       <h2 className="h2-style">Login Page</h2>
-      <LoginForm />
+      <LoginForm onSubmit={handleSubmit} />
       <div>
         <Link to="/register" element={<RegisterPage />}>
           Register
@@ -70,6 +90,8 @@ function UserDetailPage() {
 }
 
 // '/register'로 이동 시 RegisterForm으로 렌더링하는 코드를 작성하세요.
+//---------------Register작성하고 사용자 이메일이 같은게 있는지 없는지 테스트하고 없으면 /login페이지로 넘김
+//있으면 setError가 뜨게 나와야함... 어케 나오냐고~~~~
 function RegisterPage() {
   const [error, setError] = useState("");
   const history = useNavigate();
