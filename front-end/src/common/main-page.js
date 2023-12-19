@@ -10,8 +10,8 @@ export default function MainPage() {
       />
       <h1>This is a Main page.</h1>
       <div>
-        well in fact, this is going to be content. and you will see the menu on
-        the left of the page.
+        Canelo vs Ryan Garcia ?! <br />
+        Do you think it can be happening?
       </div>
       <Link to="/login">Login</Link>
     </>
