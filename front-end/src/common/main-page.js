@@ -12,6 +12,8 @@ export default function MainPage() {
       <div>
         Canelo vs Ryan Garcia ?! <br />
         Do you think it can be happening?
+        <br /> Later on, I will put like name changing canelo to someone else
+        and Ryan Garcia to someone else.
       </div>
       <Link to="/login">Login</Link>
     </>
